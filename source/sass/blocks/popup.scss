@@ -39,7 +39,7 @@
   animation: popupAnimation 1s ease-in-out both;
 }
 
-@keyframes foo {
+@keyframes popupAnimation {
   to {
     opacity: 1;
     top: 0;
