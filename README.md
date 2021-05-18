@@ -12,7 +12,8 @@ Mark Weber
 2. Gulp,
 3. Webpack,
 4. npm,
-5. noUiSlider
+5. noUiSlider,
+6. VScode
 
 ---
 
