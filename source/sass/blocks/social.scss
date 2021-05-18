@@ -1,0 +1,18 @@
+.social__item {
+  width: 30px;
+  height: 30px;
+  margin-top: 21px;
+
+  &:last-child {
+    margin-top: 15px;
+  }
+}
+
+.social__item svg {
+  fill: $basic-white;
+
+  &:hover {
+    fill: $basic-red;
+    transition: 0.5s;
+  }
+}

@@ -1,0 +1,38 @@
+.noUi-touch-area,
+.noUi-base {
+  background-color: none !important;
+  border-radius: 100% !important;
+}
+
+.noUi-handle {
+  width: 22px !important;
+  height: 22px !important;
+  background-color: $basic-red !important;
+  border-radius: 100% !important;
+  border: none !important;
+  box-shadow: none !important;
+  top: -9px !important;
+
+  &:before,
+  &:after {
+    background-color: $basic-red !important;
+  }
+}
+
+.noUi-connect {
+  background-color: $basic-red !important;
+  height: 5px !important;
+}
+
+.noUi-connects {
+  height: 3px !important;
+  background-color: $basic-grey !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.noUi-target {
+  height: 3px !important;
+  background-color: $basic-grey !important;
+  border: none !important;
+}

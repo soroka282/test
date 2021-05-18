@@ -1,0 +1,22 @@
+body {
+  font-family: "Core";
+  color: $basic-white;
+  margin: 0;
+  padding: 0;
+  cursor: default;
+  background-color: $basic-grey;
+}
+
+a {
+  color: $basic-white;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}

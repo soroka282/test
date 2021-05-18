@@ -1,0 +1,49 @@
+.page {
+  width: 1680px;
+  margin: 0 auto;
+}
+
+.page__body {
+  margin-top: 13px;
+}
+
+.page__bgvideo {
+  position: fixed;
+  right: 50%;
+  top: 0;
+  transform: translateX(50%);
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -10;
+}
+
+.bg-animation {
+  animation: slide 2s linear both;
+}
+
+.bg-animation-reverse {
+  animation: slide-reverse 2s linear both;
+}
+
+@keyframes slide {
+  to {
+    transform: translateX(50%);
+  }
+
+  from {
+    transform: translateX(150%);
+    z-index: -12 !important;
+  }
+}
+
+@keyframes slide-reverse {
+  to {
+
+    transform: translateX(150%);
+  }
+
+  from {
+    transform: translateX(50%);
+    z-index: -9 !important;
+  }
+}

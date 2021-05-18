@@ -1,0 +1,46 @@
+.offer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.offer__wrap {
+  position: relative;
+  margin-bottom: 110px;
+}
+
+.offer__additionally {
+  margin-top: 22px;
+  background-color: $basic-white;
+  width: 194px;
+  height: 56px;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    left: 184px;
+    border: 22px solid transparent;
+    border-left: 0px solid $basic-white;
+    border-top: 50px solid $basic-white;
+  }
+
+  &::after {
+    top: 6px;
+    transform: scale(1, -1);
+  }
+}
+
+.offer__social {
+  margin-top: 133px;
+}
+
+.offer__houses {
+  width: 100%;
+  margin-top: 18px;
+}
+
+.offer__info {
+  display: flex;
+  width: 720px;
+  margin-right: 15px;
+}

@@ -1,0 +1,210 @@
+.filter__form {
+  display: flex;
+  margin-left: 37px;
+}
+
+.filter__title {
+  font-size: 13px;
+  font-weight: 450;
+}
+
+.filter__wrap-rooms {
+  margin-right: 14px;
+}
+
+.filter__rooms-box {
+  border-radius: 5px;
+  background-color: $opacity-white;
+  height: 56px;
+  width: 314px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.filter__name-rooms {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid $basic-white;
+  width: 55px;
+  height: 56px;
+  cursor: pointer;
+}
+
+.filter__name-rooms:nth-child(2) {
+  width: 90px;
+  border-left: none;
+}
+
+.filter__input-rooms:checked + .filter__name-rooms {
+  background-color: $basic-red;
+  border-radius: 5px;
+}
+
+.filter__wrap {
+  margin-left: 19px;
+  position: relative;
+
+  & div {
+    border-radius: 5px;
+  }
+}
+
+.filter__wrap-cost {
+  margin-left: 25px;
+}
+
+.filter__input-square,
+.filter__input-cost {
+  font-family: 'Core';
+  color: $basic-white;
+  font-size: 16px;
+  height: 54px;
+  padding-left: 35px;
+  width: 90px;
+  margin-right: -5px;
+  padding-right: 10px;
+  border: none;
+  background-color: $opacity-white;
+
+    &:nth-child(2) {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+
+    &:last-child {
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border-left: 1px solid $basic-white;
+    }
+}
+
+.filter__name-square,
+.filter__name-cost {
+  position: absolute;
+  margin-top: 18px;
+  margin-left: 15px;
+}
+
+.filter__wrap-house-complex {
+  position: relative;
+  margin-left: 23px;
+}
+
+.filter__select {
+  font-size: 16px;
+  font-family: 'Core';
+  color: $basic-white;
+  width: 270px;
+  height: 55px;
+  padding-left: 10px;
+  margin-top: 1px;
+  border: none;
+  background-color: $opacity-white;
+  border-radius: 5px;
+  appearance: none;
+  cursor: pointer;
+
+  & option {
+    color: $basic-white;
+    background-color: $basic-grey;
+  }
+}
+
+.filter__select-wrap::before,
+.filter__select-wrap::after {
+  content: '';
+  position: absolute;
+  background-color: $basic-white;
+  transform: rotate(-45deg);
+}
+
+.filter__select-wrap::before {
+  width: 8px;
+  height: 2px;
+  right: 22.5px;
+  top: 69px;
+  z-index: 10;
+}
+
+.filter__select-wrap::after {
+  width: 2px;
+  height: 8px;
+  right: 30px;
+  top: 66px;
+}
+
+.filter__more {
+  font-family: 'Core';
+  color: $basic-white;
+  position: relative;
+  width: 125px;
+  height: 56px;
+  padding-left: 52px;
+  text-align: left;
+  margin-left: 45px;
+  margin-top: 42px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: 1px solid $basic-white;
+  cursor: pointer;
+
+  & svg {
+    position: absolute;
+    left: 16px;
+    top: 17px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.filter__show-result {
+  font-family: 'Core';
+  color: $basic-white;
+  font-size: 16px;
+  width: 224px;
+  height: 56px;
+  background-color: $basic-red;
+  text-align: center;
+  margin-top: 40px;
+  margin-left: 22px;
+  border-radius: 5px;
+  border: 1px solid $opacity-red;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+
+  &:hover {
+    border: 10px solid $basic-red;
+    box-shadow: 10px 10px 0px 0px $opacity-red;
+    transition: all 0.3s ease-in;
+  }
+
+  &:active {
+    border: none;
+    margin-top: 42px;
+    height: 51px;
+  }
+}
+
+.filter__name-rooms,
+.filter__input-square,
+.filter__input-cost,
+.filter__select,
+.filter__more {
+
+  &:hover {
+    background-color: $opacity-red;
+    border-radius: 5px;
+  }
+
+  &:focus {
+    background-color: $basic-red;
+    border-radius: 5px;
+  }
+
+  &:active {
+    background-color: $basic-red;
+    border-radius: 5px;
+  }
+}
